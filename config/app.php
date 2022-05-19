@@ -230,6 +230,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /* Services */
+        'FeeCalculatorService' => App\Facades\FeeCalculatorServiceFacade::class,
+        'DispersionMeasureService' => App\Facades\DispersionMeasureServiceFacade::class,
     ],
 
 ];
