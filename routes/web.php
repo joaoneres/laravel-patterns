@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/facades/total-amplitude', function () {
+    return DispersionMeasureService::totalAmplitude([1, 2, 3, 4, 5]);
+});
+
+Route::get('/facades/fee/{value}', function ($value) {
+    return FeeCalculatorService::fee($value);
+});
